@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Material Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
+    </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <link href="css/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body class="bg-dark" id="top">
+    <div class="page-content">
+      <div class="shadow-1-strong bg-white" id="intro">
+        <div class="bg-info text-white">
+          <div class="cover bg-image">
+            <img src="images/bg.jpg" />
+            <div
+              class="mask"
+              style="
+                background-color: rgba(0, 0, 0, 0.7);
+                backdrop-filter: blur(2px);
+              "
+            >
+            <div class="text-end px-3 pt-2 btnLang">
+                <span class="btnLangEng"><img src="images/uk.png" alt="uk" width="17" height="15"> English | <a href="#" onclick="langId()"><img src="images/id.png" alt="uk" width="17" height="15"> Change to Bahasa Indonesia</a></span>
+                <span class="btnLangId" style="display: none;"><a href="#" onclick="langEng()"><img src="images/uk.png" alt="uk" width="17" height="15"> Ubah ke Bahasa Inggris</a> | <img src="images/id.png" alt="uk" width="17" height="15"> Bahasa Indonesia</span>
+            </div>
+              <div class="text-center p-5">
+                <div class="avatar p-1">
+                  <img
+                    class="img-thumbnail shadow-2-strong"
+                    src="images/foto.jpg"
+                    width="120"
+                    height="120"
+                  />
+                </div>
+                <div class="header-bio mt-3">
+                  <div data-aos="zoom-in" data-aos-delay="0">
+                    <h2 class="mb-2">Rizal Baihaqi</h2>
+                    <h5><i>"Fullstack Web <span class="dan"></span> Mobile Developer"</i></h5>
+                  </div>
+                  <div class="d-print-none mt-4">
+                    <span class="btnCv"></span>
+                    <a
+                      class="btn btn-outline-info btn-lg shadow-md mt-1 btnHire"
+                      href="https://wa.me/628989753840?text=Hi+Rizal"
+                      data-aos="fade-left"
+                      data-aos-delay="400"
+                      ></a
+                    >
+                  </div>
+                  <div class="text-center mt-4">
+                    <a href="#about"><i
+                          class="fa fa-angle-double-down fa-2x"
+                          data-aos="zoom-in"
+                          data-aos-delay="200"
+                        ></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="resume-container">
+          <div class="shadow-1-strong bg-white my-5 p-5" id="about">
+            <div class="about-section">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2 class="h2 fw-light mb-4 headAbout"></h2>
+                  <div class="contentAbout">
+                    
+                  </div>
+                </div>
+                <div class="col-md-5 offset-lg-1">
+                  <div class="row mt-2">
+                    <h2 class="h2 fw-light mb-4">Bio</h2>
+                    <div class="col-sm-4">
+                      <div class="pb-2 fw-bolder">
+                        <i
+                          class="far fa-calendar-alt pe-2 text-muted"
+                          style="width: 24px; opacity: 0.85"
+                        ></i>
+                        <span class="bioAge"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="pb-2" id="dob"></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="pb-2 fw-bolder">
+                        <i
+                          class="far fa-envelope pe-2 text-muted"
+                          style="width: 24px; opacity: 0.85"
+                        ></i>
+                        <span class="bioEmail"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="pb-2">rizalbaihaqi5@gmail.com</div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="pb-2 fw-bolder">
+                        <i
+                          class="fas fa-phone pe-2 text-muted"
+                          style="width: 24px; opacity: 0.85"
+                        ></i>
+                        <span class="bioTelp"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="pb-2">+628989753840</div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="pb-2 fw-bolder">
+                        <i
+                          class="fas fa-map-marker-alt pe-2 text-muted"
+                          style="width: 24px; opacity: 0.85"
+                        ></i>
+                        <span class="bioAddress"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-8">
+                      <div class="pb-2">
+                        Welahan, Jepara, Central Java, Indonesia
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <a href="#skills"><i
+                      class="fa fa-angle-double-down fa-2x"
+                      data-aos="zoom-in"
+                      data-aos-delay="300"
+                    ></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
+            <div class="skills-section">
+              <h2 class="h2 fw-light mb-4 headSkills"></h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-4">
+                    <div class="progress my-2 rounded" style="height: 30px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="100"
+                        data-aos-anchor=".skills-section"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <strong style="font-size: large;">HTML+CSS</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="progress my-2 rounded" style="height: 30px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="200"
+                        data-aos-anchor=".skills-section"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                      <strong style="font-size: large;">MySQL</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="progress my-2 rounded" style="height: 30px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="300"
+                        data-aos-anchor=".skills-section"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                      <strong style="font-size: large;">PHP</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="progress my-2 rounded" style="height: 30px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="300"
+                        data-aos-anchor=".skills-section"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                      <strong style="font-size: large;">Javascript</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-4">
+                    <div class="progress my-2 rounded" style="height: 30px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="400"
+                        data-aos-anchor=".skills-section"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                      <strong style="font-size: large;">Laravel</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="progress my-2 rounded" style="height: 30px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="400"
+                        data-aos-anchor=".skills-section"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                      <strong style="font-size: large;">Node Js</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="progress my-2 rounded" style="height: 30px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="500"
+                        data-aos-anchor=".skills-section"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                      <strong style="font-size: large;">React Native</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <div class="progress my-2 rounded" style="height: 30px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="600"
+                        data-aos-anchor=".skills-section"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                      <strong style="font-size: large;">GIT version control</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <a href="#education"><i
+                        class="fa fa-angle-double-down fa-2x"
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                      ></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="education">
+            <div class="education-section">
+              <h2 class="h2 fw-light mb-4 headEducation"></h2>
+              <div class="timeline">
+                <div
+                  class="timeline-card timeline-card-secondary"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      <span class="eduMajor1"></span>
+                      <span class="text-muted h6"
+                        ><span class="dari"></span> Universitas Muria Kudus</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-0">2016 - 2020 <small>(<span class="ipk"></span> 3.71)</small></div>
+                    <div>
+                      <!-- Leverage agile frameworks to provide a robust synopsis for
+                      high level overviews. Iterative approaches to corporate
+                      strategy foster collaborative thinking to further the
+                      overall value proposition. -->
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-secondary"
+                  data-aos="fade-in"
+                  data-aos-delay="200"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      <span class="eduMajor2"></span>
+                      <span class="text-muted h6"><span class="dari"></span> SMK Islam Al-Hikmah Mayong Jepara</span>
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-0">2012 - 2015</div>
+                      <div>
+                        <!-- User generated content in real-time will have multiple
+                        touchpoints for offshoring. Organically grow the holistic
+                        world view of disruptive innovation via workplace
+                        diversity and empowerment. -->
+                      </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <a href="#experience"><i
+                        class="fa fa-angle-double-down fa-2x"
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                      ></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+            <div class="work-experience-section">
+              <h2 class="h2 fw-light mb-4 headExp"></h2>
+              <div class="timeline">
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Programmer
+                      <span class="text-muted h6"><span class="di"></span><span class="expPlace"></span></span>
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3 expTime">
+                      
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="100">
+                      <div class="expHdCo1"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo1"></div>
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="200">
+                      <div class="expHdCo2"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo2"></div>
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="300">
+                      <div class="expHdCo3"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo3"></div>
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="400">
+                      <div class="expHdCo4"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo4"></div>
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="500">
+                      <div class="expHdCo5"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo5"></div>
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="600">
+                      <div class="expHdCo6"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo6"></div>
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="700">
+                      <div class="expHdCo7"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo7"></div>
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="800">
+                      <div class="expHdCo8"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo8"></div>
+                    </div>
+                    <div class="timeline-card-child px-3"
+                    data-aos="fade-in"
+                    data-aos-delay="900">
+                      <div class="expHdCo9"></div>
+                      <div class="timeline-body-child px-3 pb-3 expCo9"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-4">
+                <a href="#portfolio"><i
+                      class="fa fa-angle-double-down fa-2x"
+                      data-aos="zoom-in"
+                      data-aos-delay="200"
+                    ></i></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="shadow-1-strong bg-white my-5 p-5 d-print-none"
+            id="portfolio"
+          >
+            <div class="portfolio-section">
+              <h2 class="h2 fw-light mb-4 headPort"></h2>
+              <div class="row g-0 mb-3">
+                <div class="col-md-6">
+                  <div class="gallery js-flickity"
+                  data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell-img"><img src="images/dinkominfo/1.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/dinkominfo/2.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/dinkominfo/3.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/dinkominfo/4.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/dinkominfo/5.png" alt="" width="100%" height="200"></div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                >
+                  <div class="m-4 mt-md-2">
+                    <p class="text-teal text-small">
+                      CodeIgniter3
+                    </p>
+                    <h3><a class="expHdCo1" href="https://dinkominfo.demakkab.go.id" target="_blank" rel="noopener noreferrer"></a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-0 portfolio-reverse mb-3">
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                >
+                  <div class="m-4 mt-md-2 text-end">
+                    <p class="text-teal text-small">
+                      Laravel
+                    </p>
+                    <h3><a class="expHdCo2" href="https://mipp.demakkab.go.id" target="_blank" rel="noopener noreferrer"></a></h3>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="gallery js-flickity"
+                  data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell-img"><img src="images/mipp/1.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/mipp/2.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/mipp/3.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/mipp/4.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/mipp/5.png" alt="" width="100%" height="200"></div>
+                  </div>
+                </div>
+                </div>
+              <div class="row g-0 mb-3">
+                <div class="col-md-6">
+                  <div class="gallery js-flickity"
+                  data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell-img"><img src="images/corona/1.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/corona/2.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/corona/3.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/corona/4.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/corona/5.png" alt="" width="100%" height="200"></div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                >
+                  <div class="m-4 mt-md-2">
+                    <p class="text-teal text-small">
+                      Laravel
+                    </p>
+                    <h3><a class="expHdCo3" href="https://corona.demakkab.go.id" target="_blank" rel="noopener noreferrer"></a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-0 portfolio-reverse mb-3">
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                >
+                  <div class="m-4 mt-md-2 text-end">
+                    <p class="text-teal text-small">
+                      Laravel
+                    </p>
+                    <h3><a class="expHdCo4" href="https://bansos.demakkab.go.id" target="_blank" rel="noopener noreferrer"></a></h3>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="gallery js-flickity"
+                  data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell-img"><img src="images/bansos/1.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/bansos/2.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/bansos/3.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/bansos/4.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/bansos/5.png" alt="" width="100%" height="200"></div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="row g-0 mb-3">
+                <div class="col-md-6">
+                  <div class="gallery js-flickity"
+                  data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell-img"><img src="images/dematik/1.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/dematik/2.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/dematik/3.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/dematik/4.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/dematik/5.png" alt="" width="100%" height="200"></div>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                >
+                  <div class="m-4 mt-md-2">
+                    <p class="text-teal text-small">
+                      Laravel
+                    </p>
+                    <h3><a class="expHdCo5" href="https://dematik.demakkab.go.id" target="_blank" rel="noopener noreferrer"></a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-0 portfolio-reverse mb-3">
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                >
+                  <div class="m-4 mt-md-2 text-end">
+                    <p class="text-teal text-small">
+                      Laravel
+                    </p>
+                    <h3><a class="expHdCo6" href="https://integrasi.demakkab.go.id" target="_blank" rel="noopener noreferrer"></a></h3>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="gallery js-flickity"
+                  data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell-img"><img src="images/integrasi/1.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/integrasi/2.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/integrasi/3.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/integrasi/4.png" alt="" width="100%" height="200"></div>
+                    <div class="gallery-cell-img"><img src="images/integrasi/5.png" alt="" width="100%" height="200"></div>
+                  </div>
+                </div>
+                </div>
+                <div class="row g-0 mb-3">
+                  <div class="col-md-6">
+                    <div class="gallery js-flickity"
+                    data-flickity-options='{ "wrapAround": true }'>
+                      <div class="gallery-cell-img"><img src="images/satudata/1.png" alt="" width="100%" height="200"></div>
+                      <div class="gallery-cell-img"><img src="images/satudata/2.png" alt="" width="100%" height="200"></div>
+                      <div class="gallery-cell-img"><img src="images/satudata/3.png" alt="" width="100%" height="200"></div>
+                      <div class="gallery-cell-img"><img src="images/satudata/4.png" alt="" width="100%" height="200"></div>
+                      <div class="gallery-cell-img"><img src="images/satudata/5.png" alt="" width="100%" height="200"></div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 d-flex align-items-center"
+                  >
+                    <div class="m-4 mt-md-2">
+                      <p class="text-teal text-small">
+                        Laravel
+                      </p>
+                      <h3><a class="expHdCo7" href="https://satudata.demakkab.go.id" target="_blank" rel="noopener noreferrer"></a></h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-0 portfolio-reverse mb-3">
+                  <div
+                    class="col-md-6 d-flex align-items-center"
+                  >
+                    <div class="m-4 mt-md-2 text-end">
+                      <p class="text-teal text-small">
+                        React Native
+                      </p>
+                      <h3><a class="expHdCo8" href="https://play.google.com/store/apps/details?id=com.rb.jogosantri.demak" target="_blank" rel="noopener noreferrer"></a></h3>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="gallery js-flickity"
+                    data-flickity-options='{ "wrapAround": true }'>
+                      <div class="gallery-cell-img"><img src="images/jogosantri/1.png" alt="" width="100%" height="200"></div>
+                      <div class="gallery-cell-img"><img src="images/jogosantri/2.png" alt="" width="100%" height="200"></div>
+                      <div class="gallery-cell-img"><img src="images/jogosantri/3.png" alt="" width="100%" height="200"></div>
+                      <div class="gallery-cell-img"><img src="images/jogosantri/4.png" alt="" width="100%" height="200"></div>
+                      <div class="gallery-cell-img"><img src="images/jogosantri/5.png" alt="" width="100%" height="200"></div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row g-0 mb-3">
+                    <div class="col-md-6">
+                      <div class="gallery js-flickity"
+                      data-flickity-options='{ "wrapAround": true }'>
+                        <div class="gallery-cell-img"><img src="images/waliwarga/1.png" alt="" width="100%" height="200"></div>
+                        <div class="gallery-cell-img"><img src="images/waliwarga/2.png" alt="" width="100%" height="200"></div>
+                        <div class="gallery-cell-img"><img src="images/waliwarga/3.png" alt="" width="100%" height="200"></div>
+                        <div class="gallery-cell-img"><img src="images/waliwarga/4.png" alt="" width="100%" height="200"></div>
+                        <div class="gallery-cell-img"><img src="images/waliwarga/5.png" alt="" width="100%" height="200"></div>
+                        <div class="gallery-cell-img"><img src="images/waliwarga/6.png" alt="" width="100%" height="200"></div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-md-6 d-flex align-items-center"
+                    >
+                      <div class="m-4 mt-md-2">
+                        <p class="text-teal text-small">
+                          React Native
+                        </p>
+                        <h3><a class="expHdCo9" href="https://play.google.com/store/apps/details?id=com.rb.waliwarga.demak" target="_blank" rel="noopener noreferrer"></a></h3>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+      <a href="#intro" class="btnToUp"></a>
+    </footer>
+    <script src="scripts/mdb.min.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.btnLangId').hide();
+        var dob = new Date("1997-07-05");
+        var today = new Date();
+        var age = Math.floor((today - dob) / (365.25 * 24 * 60 * 60 * 1000));
+        $('#dob').html(age);
+
+        langEng();
+        
+      });
+      function langEng() {
+        $('.btnLangEng').show();
+        $('.btnLangId').hide();
+        $('.di').html("at");
+        $('.dan').html("and");
+        $('.dari').html("from");
+        $('.ipk').html("GPA");
+        $('.btnHire').html("Hire Me");
+        $('.btnToUp').html("Back to Top");
+        $('.btnCv').html("<a class='btn btn-outline-warning btn-lg shadow-md mt-1 me-3' href='resume/cv-rizal-baihaqi(en).pdf' data-aos='fade-right' data-aos-delay='400'>Download CV</a>");
+        $('.headAbout').html("About Me");
+        $('.headSkills').html("Skills");
+        $('.headEducation').html("Education");
+        $('.headExp').html("Work Experience");
+        $('.headPort').html("Portfolio");
+        $('.contentAbout').html("<p>Hi, I’m Rizal. I am passionate about Website and Mobile Programming. I am a skilled <strong>fullstack web developer</strong> using PHP with Laravel framework and <strong>mobile developer</strong> using javascript with React Native. I am a quick learner and a team worker that gets the job done. </p><p>Motivates myself to achieve targets, not overdo in everything, willing to learn new things. </p>");
+        $('.bioAge').html("Age");
+        $('.bioEmail').html("Email");
+        $('.bioTelp').html("Phone");
+        $('.bioAddress').html("Address");
+        $('.eduMajor1').html("Bachelor in Information Technology");
+        $('.eduMajor2').html("Audio and Video");
+        $('.expTime').html("December, 2020 - Present");
+        $('.expPlace').html(" Communication and Informatics Service Demak District");
+        $('.expHdCo1').html("Main Website of Communication and Informatics Service");
+        $('.expCo1').html("<a href='https://dinkominfo.demakkab.go.id' target='_blank'>https://dinkominfo.demakkab.go.id</a> shows profile, news, and anythings related to the instance. I was build using CodeIgniter 3.");
+        $('.expHdCo2').html("Mall of Information Public Services (MIPP)");
+        $('.expCo2').html("<a href='https://mipp.demakkab.go.id' target='_blank'>https://mipp.demakkab.go.id</a> shows website of Demak's public services, submission of services, complaintment of services, etc. I was build using Laravel.");
+        $('.expHdCo3').html("Covid-19 Information Website");
+        $('.expCo3').html("<a href='https://corona.demakkab.go.id' target='_blank'>https://corona.demakkab.go.id</a> shows information of Covid-19 updates. I was build using Laravel.");
+        $('.expHdCo4').html("Check Sosial Assistance Website");
+        $('.expCo4').html("<a href='https://bansos.demakkab.go.id' target='_blank'>https://bansos.demakkab.go.id</a> shows information of sosial assistance from district government, check status assistance by ID number. I was build using Laravel.");
+        $('.expHdCo5').html("IT Asset Collection Website");
+        $('.expCo5').html("<a href='https://dematik.demakkab.go.id' target='_blank'>https://dematik.demakkab.go.id</a> collect an IT Asset of regional organization of Demak. I was build using Laravel.");
+        $('.expHdCo6').html("Data Integration Website");
+        $('.expCo6').html("<a href='https://integrasi.demakkab.go.id' target='_blank'>https://integrasi.demakkab.go.id</a> collect a website data from other instance through an API. I was build using Laravel.");
+        $('.expHdCo7').html("Demak One Data Website");
+        $('.expCo7').html("<a href='https://satudata.demakkab.go.id' target='_blank'>https://satudata.demakkab.go.id</a> shows data collection of Demak. I was build using Laravel.");
+        $('.expHdCo8').html("Jogo Santri Android Application");
+        $('.expCo8').html("<a href='https://play.google.com/store/apps/details?id=com.rb.jogosantri.demak' target='_blank'>Jogo Santri at Play Store</a> shows profile, event, and economic of islamic boarding school in Demak. I was build using React Native.");
+        $('.expHdCo9').html("Wali Warga Android Application");
+        $('.expCo9').html("<a href='https://play.google.com/store/apps/details?id=com.rb.waliwarga.demak' target='_blank'>Wali Warga at Play Store</a> shows information of public place in Demak and shows website of Demak's public services. I was build using React Native.");
+      }
+      function langId() {
+        $('.btnLangEng').hide();
+        $('.btnLangId').show();
+        $('.di').html("di");
+        $('.dan').html("dan");
+        $('.dari').html("dari");
+        $('.ipk').html("IPK");
+        $('.btnHire').html("Lamar Saya");
+        $('.btnToUp').html("Kembali ke Atas");
+        $('.btnCv').html("<a class='btn btn-outline-warning btn-lg shadow-md mt-1 me-3' href='resume/cv-rizal-baihaqi(id).pdf' data-aos='fade-right' data-aos-delay='400'>Unduh CV</a>");
+        $('.headAbout').html("Tentang Saya");
+        $('.headSkills').html("Kemampuan");
+        $('.headEducation').html("Pendidikan");
+        $('.headExp').html("Pengalaman Kerja");
+        $('.headPort').html("Portofolio");
+        $('.contentAbout').html("<p>Hai, Saya Rizal. Saya sangat tertarik dengan Pemrograman Website dan Mobile. Saya terampil sebagai <strong>fullstack web developer</strong> menggunakan PHP dengan framework Laravel dan <strong>mobile developer</strong> menggunakan javascript dengan React Native. Saya seorang pembelajar yang cepat dan mampu bekerja dengan tim untuk menyelesaikan tugas. </p><p>Suka memotivasi diri untuk mencapai target, tidak berlebihan dalam segala hal, mau untuk belajar hal baru. </p>");
+        $('.bioAge').html("Usia");
+        $('.bioEmail').html("Email");
+        $('.bioTelp').html("Nomor HP");
+        $('.bioAddress').html("Alamat");
+        $('.eduMajor1').html("S1 Teknik Informatika");
+        $('.eduMajor2').html("Teknik Audio Video");
+        $('.expTime').html("Desember 2020 - Sekarang");
+        $('.expPlace').html(" Dinas Komunikasi dan Informatikan Kabupaten Demak");
+        $('.expHdCo1').html("Website Utama Dinas Komunikasi dan Informatika");
+        $('.expCo1').html("<a href='https://dinkominfo.demakkab.go.id' target='_blank'>https://dinkominfo.demakkab.go.id</a> menampilkan profil, berita, dan hal lain yang berkaitan dengan dinas. Saya bangun menggunakan CodeIgniter 3.");
+        $('.expHdCo2').html("Mall Informasi Pelayanan Publik (MIPP)");
+        $('.expCo2').html("<a href='https://mipp.demakkab.go.id' target='_blank'>https://mipp.demakkab.go.id</a> menampilkan website pelayanan publik milik Demak, pengajuan layanan, pengaduan layanan, dan lainnya. Saya bangun menggunakan Laravel.");
+        $('.expHdCo3').html("Website Informasi Covid-19");
+        $('.expCo3').html("<a href='https://corona.demakkab.go.id' target='_blank'>https://corona.demakkab.go.id</a> menampilkan update informasi Covid-19. Saya bangun menggunakan Laravel.");
+        $('.expHdCo4').html("Website Cek Bansos");
+        $('.expCo4').html("<a href='https://bansos.demakkab.go.id' target='_blank'>https://bansos.demakkab.go.id</a> menampilkan informasi bansos dari pemkab, cek status bansos dengan NIK. Saya bangun menggunakan Laravel.");
+        $('.expHdCo5').html("Website Pendataan Aset TIK");
+        $('.expCo5').html("<a href='https://dematik.demakkab.go.id' target='_blank'>https://dematik.demakkab.go.id</a> pendataan Aset TIK Organisasi Perangkat Daerah (OPD) Kabupten Demak. Saya bangun menggunakan Laravel.");
+        $('.expHdCo6').html("Website Integrasi Data");
+        $('.expCo6').html("<a href='https://integrasi.demakkab.go.id' target='_blank'>https://integrasi.demakkab.go.id</a> mengumpulkan berbagai data dari instansi lain melalui sebuah API. Saya bangun menggunakan Laravel.");
+        $('.expHdCo7').html("Website Satu Data Demak");
+        $('.expCo7').html("<a href='https://satudata.demakkab.go.id' target='_blank'>https://satudata.demakkab.go.id</a> menampilkan kumpulan data kabupaten Demak. Saya bangun menggunakan Laravel.");
+        $('.expHdCo8').html("Aplikasi Android Jogo Santri");
+        $('.expCo8').html("<a href='https://play.google.com/store/apps/details?id=com.rb.jogosantri.demak' target='_blank'>Jogo Santri di Play Store</a> menampilkan profil, event pengajian, dan ekonomi pesantren di Demak. Saya bangun menggunakan React Native.");
+        $('.expHdCo9').html("Aplikasi Android Wali Warga");
+        $('.expCo9').html("<a href='https://play.google.com/store/apps/details?id=com.rb.waliwarga.demak' target='_blank'>Wali Warga di Play Store</a> menampilkan informasi tempat publik di Demak dan menampilkan website pelayanan publik milik Demak. Saya bangun menggunakan React Native.");
+      }
+    </script>
+    <script>
+
+    </script>
+  </body>
+</html>
